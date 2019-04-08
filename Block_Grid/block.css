@@ -1,0 +1,28 @@
+.cell {
+border: 5px black solid;
+margin: 5px;
+}
+.block {
+  display: flex;                       
+  flex-wrap: wrap;                     
+padding: 30px;
+width: 400px;
+height: 400px;
+align-content: center;
+
+/*transform: translate (50%, 0)*/
+}
+div>div>div {
+border: 40px white solid;
+}
+div>div>div>div {
+border: black 12px solid;
+border-radius: 50%;}
+ 
+.cell:hover  
+{border-color: blue;}
+
+.cell:hover div [id="0"] 
+{border-color: blue;}
+.cell:hover>div 
+{border-color: yellow;}

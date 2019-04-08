@@ -1,0 +1,36 @@
+.columns {
+    margin: 40px auto 0 auto;
+    line-height: 1.5; 
+   }
+   .columns div {
+    padding: 20px;    
+    box-sizing: border-box;
+    margin-top: 20px;
+   }
+.left {
+order: 1;
+background: rgb(255, 194, 250);
+}
+.main {
+    order: 2;
+    background: rgb(177, 171, 255);
+   }
+.right {
+    order: 3;
+    background: rgb(238, 255, 160)
+}
+@media (min-width: 500px) {
+    .columns {display: flex;
+    justify-content: space-around;}
+    .left {width: 20%;}
+    .main {width: 50%;}
+    .right {width: 20%;}
+}
+@media (max-width 800px) {
+.columns {display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap}
+    .left {width: 160pxpx;}
+    .main {width: 470px;}
+    .right {width: 160px;}
+}

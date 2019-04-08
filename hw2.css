@@ -1,0 +1,97 @@
+#headline {
+    color: blue;
+    font-size: 20px;
+}
+body>div:not(#hw2) {
+    padding: 5px;
+    background: black;
+}
+div>div>div {
+    padding: 5px;
+    background: rgb(48, 46, 46)
+}
+div>div {
+    padding: 5px;
+    background: rgb(255, 255, 255);
+}
+div>div>div>div {
+    padding: 5px;
+    background: rgb(68, 67, 67)
+}
+div>div>div>div>div {
+    padding: 5px;
+    background: rgb(128, 117, 117)
+}
+li {
+    list-style: none;
+}
+li:first-child {
+    color: green;
+    background: yellow;
+    border-bottom: 2px solid rgb(255, 187, 0);
+}
+li:nth-child(even) {
+    font-size: 26px;
+}
+li:nth-child(3n) {
+    background: yellow;
+}
+
+li:before  {
+    content: "-";
+}
+li:first-child:before{
+    display: none;
+}
+li:last-child {
+    border-bottom: 2px solid rgb(255, 248, 154);
+}
+a:hover{
+    color: rgb(48, 39, 180);
+    text-decoration: underline rgb(104, 104, 104);
+}
+body div header h1 a img {
+    display: block;
+    width: 400px;
+    height: 350px;
+}
+body div header + main section article{
+    font-size: 18px;
+    background: grey;
+}
+body div header + main +footer address + span{ 
+    font-size: 200%;
+    color: red
+}
+
+table{
+    width: 800px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgb(204, 204, 204);
+    font-weight: bold;
+}
+th {
+    background: rgb(149, 145, 197);
+    text-align: left;     
+}
+td, th {
+    padding: 10px;
+}
+table, th, td {
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+tr td:nth-child(3), tr td:nth-child(4), thead th:nth-child(3), thead th:nth-child(4) {
+   padding-left: 40px;
+   padding-right: 10px;
+}
+tr td:last-child, thead th:last-child {
+    text-align: right;
+}
+tr:nth-child(odd){
+    color: rgb(29, 29, 56)
+}
+tr:nth-child(even) {
+    color:  rgb(204, 204, 204);
+    background: rgb(29, 29, 56)
+}

@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Courier;
+    background: rgb(108, 95, 168);
+    color: white;
+   }
+.box {
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(33, 33, 61);
+    text-align: center;    
+}
+.box h1{
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 0;
+}
+.box input[type="text"], .box input[type="password"] {
+    margin: 10px auto;
+    text-align: center;
+    background: none;
+    width: 200px;
+    height: 25px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 15px;
+    border: 2px groove rgb(116, 210, 300);
+    border-radius: 70px;
+    outline: none;
+  transition: 0.25s
+}
+.box input[type="text"]:focus, .box input[type="password"]:focus, .box input[type="text"]:hover, .box input[type="password"]:hover {
+  width: 220px;
+  border-color: rgb(100, 500, 170);
+}
+.kn {
+   margin: 10px auto;
+    text-align: center;
+    background: none;
+    width: 150px;
+    height: 35px;
+    padding: 5px 10px;
+    border: 2px groove rgb(116, 210, 300);
+    border-radius: 70px;  
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+  outline: none;
+}
+.kn:hover {
+  background: rgb(100, 500, 170);
+  border-color: rgb(100, 500, 170);
+  color: rgb(33, 33, 61);
+  transition: 0.25s;
+}
+div {
+  margin-top: 10px;} 
+
+input[type="checkbox"] {
+display: none;}
+div:before {
+content: "\2690";}
+input:checked + div:before {
+content: "\2691";}
+
+
+    
