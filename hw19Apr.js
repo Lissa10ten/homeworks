@@ -46,21 +46,12 @@ switch(Case) {
     case "Boolean":
     case "Boolean: if":
     case "Array: booleans":
-        var Q = {
-            Hum : confirm("Are you a human?"),
-            Sex : confirm("Are you a man?"),
-            Race : confirm("Are you white?"),
-            Age : confirm("Are you older 18?"),
-            Int : confirm("Do you like reading?")
-        }
+        var Hum = confirm("Are you a human?");
         if (Hum) {
-            if (Sex) {alert("Men are cool")} else alert("Women are beautiful")
-            if (Race) {alert("I like it")} else alert("Congratulations")
-            if (Age) {alert("You are an adult")} else alert("Sweeet childhood")
-            if (Int) {alert("I like books too")} else alert("Try films")
-            // var Int = confirm("Do you like reading?")
-            // (Int) ? alert("I like books too") : alert("Try films")
-            // TypeError: confirm(...) is not a function
+            var Sex = confirm("Are you a man?") ? alert("Men are cool"): alert("Women are beautiful");
+            var Race = confirm("Are you white?") ? alert("I like it"): alert("Congratulations");
+            var Age = confirm("Are you older 18?") ? alert("18+"): alert("Sweet childhood");
+            var Int = confirm("Do you like reading?") ? alert("I like books too") : alert("Try films");
         } else alert("I talk to humans only")
         break;
     case "Array: plus":
@@ -115,4 +106,7 @@ switch(Case) {
         var SizeA = prompt("What is your size?")
         var Ind1 = Size.indexOf(SizeA)
         var SizeR = alert(Susa[Ind1])
+        break;
+    case "Ternary":
+        var Women = confirm("Are you a woman?") ? alert("Oh, hi:)") : alert("Sorry, i talk to women only:)")
         break;
