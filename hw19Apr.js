@@ -110,3 +110,4 @@ switch(Case) {
     case "Ternary":
         var Women = confirm("Are you a woman?") ? alert("Oh, hi:)") : alert("Sorry, i talk to women only:)")
         break;
+default: alert("Ooops..")}
