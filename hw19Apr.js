@@ -109,4 +109,10 @@ switch(Case) {
             }
         }
         break;
-        
+    case "Comparison: sizes":
+        var Size =["34","36","38","40","42","44"]
+        var Susa =[6,8,10,12,14,16]
+        var SizeA = prompt("What is your size?")
+        var Ind1 = Size.indexOf(SizeA)
+        var SizeR = alert(Susa[Ind1])
+        break;
