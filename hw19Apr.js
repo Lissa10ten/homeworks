@@ -40,4 +40,7 @@ switch(Case) {
         else alert("Goodbye")
         break;
     case "String: lexics":
-        
+        var Al = prompt("How are you today?")
+        Al.toLowerCase().includes("bad")
+        break;
+    case ""
