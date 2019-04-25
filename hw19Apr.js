@@ -43,4 +43,45 @@ switch(Case) {
         var Al = prompt("How are you today?")
         Al.toLowerCase().includes("bad")
         break;
-    case ""
+    case "Boolean":
+    case "Boolean: if":
+    case "Array: booleans":
+        var Q = {
+            Hum : confirm("Are you a human?"),
+            Sex : confirm("Are you a man?"),
+            Race : confirm("Are you white?"),
+            Age : confirm("Are you older 18?"),
+            Int : confirm("Do you like reading?")
+        }
+        if (Hum) {
+            if (Sex) {alert("Men are cool")} else alert("Women are beautiful")
+            if (Race) {alert("I like it")} else alert("Congratulations")
+            if (Age) {alert("You are an adult")} else alert("Sweeet childhood")
+            if (Int) {alert("I like books too")} else alert("Try films")
+            // var Int = confirm("Do you like reading?")
+            // (Int) ? alert("I like books too") : alert("Try films")
+            // TypeError: confirm(...) is not a function
+        } else alert("I talk to humans only")
+        break;
+    case "Array: plus":
+        var Arr = [1,20,300,4,5,6]
+        // Arr[2] = 
+        Arr[0]+Arr[1]
+        break;
+    case "Array: plus string":
+        var ArrS = ['q', 'w', 'e', 'r']
+        ArrS[0]+ArrS[2]
+        break;
+    case "Object: real":
+    case "Object: change":
+        var myQ = {
+            mSex: "female",
+            mRace: "white",
+            mAge: 20,
+            mInt: "theatre"
+        }
+        // myQ[mAge] = ++myQ[mAge]
+        myQ.mAge = ++myQ.mAge
+        var newAge = alert(myQ.mAge)
+        break;
+    
