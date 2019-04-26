@@ -56,8 +56,7 @@ switch(Case) {
         break;
     case "Array: plus":
         var Arr = [1,20,300,4,5,6]
-        // Arr[2] = 
-        Arr[0]+Arr[1]
+        Arr[2] = Arr[0]+Arr[1]
         break;
     case "Array: plus string":
         var ArrS = ['q', 'w', 'e', 'r']
