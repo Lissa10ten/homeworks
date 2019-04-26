@@ -97,10 +97,10 @@ switch(Case) {
                     case "$":
                     case "dollar":
                     case "dollars":
-                    case "usd": alert("You will have " +calc.sell.usd.toFixed(2) +" USD" )
+                    case "usd": alert("You will have " +calc["sell"]["usd"].toFixed(2) +" USD" )
                         break;
                     case "euro":
-                    case "eur": alert("You will have " +calc.sell.eur.toFixed(2) +" EUR" )
+                    case "eur": alert("You will have " +calc["sell"]["eur"].toFixed(2) +" EUR" )
                         break;
                     default: alert("Sorry, i know only 'usd' and 'eur'")
                 }
@@ -109,10 +109,10 @@ switch(Case) {
                     case "$":
                     case "dollar":
                     case "dollars":
-                    case "usd": alert("You will have " +calc.buy.usd.toFixed(2) +" UAH" )
+                    case "usd": alert("You will have " +calc["buy"]["usd"].toFixed(2) +" UAH" )
                         break;
                     case "euro":
-                    case "eur": alert("You will have " +calc.buy.eur.toFixed(2) +" UAH" )
+                    case "eur": alert("You will have " +calc["buy"]["eur"].toFixed(2) +" UAH" )
                         break;
                     default: alert("Sorry, i know only 'usd' and 'eur'")
                 }
