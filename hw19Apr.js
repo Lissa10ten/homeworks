@@ -41,7 +41,7 @@ switch(Case) {
         break;
     case "String: lexics":
         var Al = prompt("How are you today?")
-        Al.toLowerCase().includes("bad")
+        var Bad = (Al.toLowerCase().includes("bad")) ? alert("Everything will be good!") : alert("Be Happy!")
         break;
     case "Boolean":
     case "Boolean: if":
