@@ -66,14 +66,13 @@ switch(Case) {
     case "Object: real":
     case "Object: change":
         var myQ = {
-            mSex: "female",
-            mRace: "white",
-            mAge: 20,
-            mInt: "theatre"
-        }
-        // myQ[mAge] = ++myQ[mAge]
-        myQ.mAge = ++myQ.mAge
-        var newAge = alert(myQ.mAge)
+              mSex: "female",
+              mRace: "white",
+              mAge: 20,
+              mInt: "theatre"
+        	}
+        myQ["mAge"] = ++myQ["mAge"]
+        var newAge = alert(myQ["mAge"])
         break;
     case "Comparison if":
         var age = +prompt("Сколько вам лет?","");
